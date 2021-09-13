@@ -1,8 +1,10 @@
-body {
-    font-family: Bungee;
-}
+ @import url(https://fonts.googleapis.com/css2?family=Bungee&display=swap);
 
- @media screen and (min-width:480px) {
+ body{
+     font-family: Bungee;
+ }
+
+ @media only screen and (min-width:768px) {
 p {
     font-size: 20px;
     color: black;
@@ -10,8 +12,19 @@ p {
 nav {
     padding: 10px;
 }
-     
+    
  }
+
+ .logo{
+     width: 200px;
+     height: 200px;
+ }
+
+ .menuImg{
+     width: 300px;
+     height: 400px;
+ }
+
 
 .about {
     background-color: #ff00ff;
@@ -30,6 +43,8 @@ nav {
 
 .truckImg {
     float: left;
+    height: 500px;
+    width: 700px;
 }
 
 .info {
@@ -37,7 +52,8 @@ nav {
 }
 
 .menu {
-    display:inline-block;
+    display:flex;
+    float:right;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -59,7 +75,8 @@ nav:hover {
     flex-direction: row-reverse;
     display: flex;
     float: right;
-    font-size: 35px;
+    text-align: right;
+    font-size: 30px;
     margin-left: 20px;
     margin-right: 20px;
 }
