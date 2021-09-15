@@ -5,75 +5,107 @@
  }
 
  @media only screen and (min-width:768px) {
-p {
-    font-size: 20px;
-    color: black;
-}
-nav {
-    padding: 10px;
-}
-
-.menu {
-    display:flex;
-    
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 65px;
-    padding: 90px;
-    border:5px solid #7944e6;
-    text-align: center;
-}
-    
+     /* desktop */
+    p {
+        font-size: 20px;
+        color: black;
+    }
+    nav {
+        padding: 10px;
+    }
+    .container {
+        padding-top: 10px;
+        display:flex; 
+        flex-direction: row;  
+        justify-content: space-around;
+        text-align: center;
+        justify-content: space-evenly;
+    } 
+    .menuImg{
+        width: 350px;
+        height: 400px;
+    }
+    .topNavs {
+        flex-direction: row-reverse;
+        display: flex;
+        float: right;
+        text-align: right;
+        font-size: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .truckImg {
+        float: left;
+        height: 500px;
+        width: 700px;
+    }
+    .about {
+        background-color: #ff00ff;
+        margin-left:6rem;
+        margin-right: 6rem;
+        padding: 5rem;
+        border-radius: 6px;
+        display: inline-block;
+        align-items: center;
+ }
  }
 
+ @media only screen and (max-width:767px) { 
+     /* mobile */
+   
+    .container {
+        padding-top: 10px;
+        display:flex;
+        flex-direction: column;  
+        text-align: center;
+        padding-left: 200px;
+        gap: 10px;
+        width: 50%;
+    }
+    .truckImg{
+        width: 400px;
+        height: 300px;
+    }
+    .menuImg{
+        width: 200px;
+        height: 400px;
+    }
+
+    .about {
+        background-color: #ff00ff;
+        margin-left:6rem;
+        margin-right: 6rem;
+        padding: 5rem;
+        border-radius: 6px;
+        display: inline-block;
+        align-items: center;
+ }
+ .topNavs {
+    flex-direction: row-reverse;
+    display: flex;
+    float: right;
+    text-align: right;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 40px; 
+ }
  .logo{
-     width: 200px;
+     width: 150px;
      height: 200px;
  }
 
- .menuImg{
-     width: 300px;
-     height: 400px;
  }
 
-
-.about {
-    background-color: #ff00ff;
-    margin-left:6rem;
-    margin-right: 6rem;
-    padding: 5rem;
-    border-radius: 6px;
-    display: inline-block;
-    align-items: center;
-}
-
+ /* Everything else DONT TOUCH */
 .header_a {
     font-size: 30px;
     text-align: center;
 }
 
-.truckImg {
-    float: left;
-    height: 500px;
-    width: 700px;
-}
-
 .info {
     font-size: 20px;
-}
-
-.menu {
-    display:flex;
-    float:right;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 65px;
-    padding: 90px;
-    border:5px solid #7944e6;
-    text-align: center;
-}
+} 
 
 nav {
     color:#7944e6;
@@ -83,12 +115,7 @@ nav:hover {
     color:#10fdff
 }
 
-.topNavs {
-    flex-direction: row-reverse;
-    display: flex;
-    float: right;
-    text-align: right;
-    font-size: 30px;
-    margin-left: 20px;
-    margin-right: 20px;
+.item{
+    border:5px solid #7944e6; 
 }
+ 
